@@ -37,7 +37,7 @@ function descargarCV(){
     document.getElementById("descargarCV").addEventListener("click", function() {
         // Crear un enlace temporal
         var enlace = document.createElement('a');
-        enlace.href = './cv'; // Cambia 'ruta/a/tu/CV' por la ruta real de tu CV
+        enlace.href = 'Portafolio/cv'; // Cambia 'ruta/a/tu/CV' por la ruta real de tu CV
         enlace.download = 'CV-JorgeSustaita-DesarrolladorSoftware.pdf'; // Nombre de archivo para descargar (puedes cambiarlo)
 
         // Simular clic en el enlace para descargar el archivo
