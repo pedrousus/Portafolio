@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jorge</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio ">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Jorge Sustaita</h1>
+            <h2>Ingeniero en desarrollo y gestion de software </h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/jorge-sustaita-304b26287/"id="abrirEnlaceEnNuevaVentana"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jorge Bryant Sustaita Ortiz.
+
+            </span>Soy un apasionado de la programación y estoy comprometido con el aprendizaje continuo para alcanzar mis metas como desarrollador Frontend. Aunque aún no tengo experiencia profesional, he dedicado tiempo y esfuerzo para adquirir habilidades sólidas en desarrollo web, de manera de solventar mis carencias en cuestion de experiencia.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            04-10-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            449-192-75-58
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            jorgebryantprogamador@gmail.com
+                        </li>
+                        
+                        <li>
+                            <strong>Dirección</strong>
+                            Aguascalientes, Mexico
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Ingeniero de Software</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book-reader"></i>
+                            <span>PROGRAMACION</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button id="descargarCV">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>.NET</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>REACT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Iniciativa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnico en contabilidad</h4>
+                        <span class="casa">Cbtis No.195 Dolores Jiménez y Muro, Aguascalientes</span>
+                        <span class="fecha">2016 - 2019</span>
+                        <p>Bachillerato tecnologico donde adquiri conocimientos basicos y practicos de contabilidad general</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnico en Tecnologias de la informacion area de desarrollo de software multiplataforma</h4>
+                        <span class="casa">Universidad Tecnologica de Aguascalientes</span>
+                        <span class="fecha">2021 - 2023</span>
+                        <p>
+                            Preparación para realizar labores de técnico en el área de TICS enfocándose principalmente en conocimientos del desarrollo de software multiplataforma, teniendo conocimientos de distintos lenguajes a un nivel básico intermedio asi como de bases de datos SQL y NoSQL, diseño de software, metodologías de desarrollo, arquitecturas de software, ETC. Con el fin de tener bases sólidas en la programación WEB.   
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería en desarrollo y gestión de software</h4>
+                        <span class="casa">Universidad Tecnologica de Aguascalientes</span>
+                        <span class="fecha">2023 - 2025</span>
+                        <p>
+                            Especialización del desarrollo de software haciendo hincapié en su estructura y desarrollo para brindar un mejor servicio al usuario, se toma más en cuenta la experiencia del usuario y el desarrollo de pruebas de software. Es importante recalcar que se busca tener un acercamiento al ambiente laboral por lo que los alumnos por lo general aplicamos de técnicos en el área de software lo que nos permite salir con experiencia previa a la par de asistir a la universidad.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Manufacturas Orion</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>
+                            Se realizaron labores de apoyo con un proyecto WEB de Frontend en React, donde se tenían que hacer ajustes en la responsibidad del proyecto y el uso de la gama de colores, el proyecto lo tenia que verificar si la disposición de los objetos y sus colores eran los adecuados a la marca, todo esto se verificaba a través de actualizaciones de Git, hasta que el cliente este satisfecho.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Full Stack Developer</h4>
+                        <span class="casa">Shonan México </span>
+                        <span class="fecha">Marzo-2023 - Octubre-2023</span>
+                        <p>
+                            Programar y diseñar una aplicación WEB para la gestión de los equipos de cómputo del área de sistemas y registrarlos en una base de datos, el proyecto se desarrolló en el framework de JavaScript React y NodeJS implementando una base MySQL en la nube para tener un control de los datos que se busca obtener, todo esto acorde de las indicaciones del directivo en cuestión de diseño y funcionalidad, sin mencionar que la documentación tambien fue redactada y proporcionada por mí y autorizada por el directivo a cargo de mis actividades.
+                        </p>
+                        <p>
+                            Apoyar en el área de sistemas en términos de equipos de cómputo y servidores físicos propios de la empresa, entre otras tareas ajenas a la programación.
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Consultor y desarrollador Odoo</h4>
+                        <span class="casa">Clinica Familiar SigueMED</span>
+                        <span class="fecha">Diciembre 2024 - Actualidad</span>
+                        <p>
+                            Lideré la implementación del sistema ERP Odoo en la clínica familiar SigueMED, con el propósito de sistematizar y estandarizar sus procesos operativos y administrativos. Estuve a cargo de la configuración integral y la puesta en marcha de los distintos módulos del sistema, integrando conocimientos técnicos en programación, así como fundamentos de contabilidad y finanzas, en colaboración con profesionales de dichas áreas.
+
+                            Entre mis principales aportes, destaco la normalización y estandarización de la base de datos del sistema de inventario, aplicando buenas prácticas en diseño y gestión de bases de datos. Asimismo, facilité la capacitación del personal en el uso de Odoo, contribuyendo a una adopción efectiva del sistema por parte de los colaboradores.
+                        </p>
+                        <p>
+                            Actualmente, continúo brindando soporte técnico de manera ocasional como consultor externo, atendiendo requerimientos tecnológicos específicos de la clínica.
+
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" onclick="mostrarModal('https://www.youtube.com/embed/kclMibtdsAU?si=D0Od-OQiExxZqPuC', 'Skill Mentor', 'Video demostrativo de las funciones de la app, asi como su funcionalidad y diseño, a traves de un ejemplo de uso')">
+                <img src="img/p1.png" alt="">
+                <p class="titulo-proyecto">Skill Mentor</p>
+                </div>
+                <div class="proyecto" onclick="mostrarModal('https://www.youtube.com/embed/3GwjfUFyY6M', 'Creativo', 'Soluciones rápidas')">
+                <img src="img/p2.jpg" alt="">
+                <p class="titulo-proyecto">Traductor Español-Hebreo</p>
+                </div>
+                <div class="proyecto" onclick="mostrarModal('https://www.youtube.com/embed/NbL7WE9-13Q?si=eeOj8ls9UZpw0_Vz', 'implementación de Odoo ', 'implementación de Odoo en la clinica familiar SigueMED')">
+                <img src="img/odoo.PNG" alt="">
+                <p class="titulo-proyecto">Consultoria Odoo</p>
+                </div>
+                <div class="proyecto" onclick="mostrarModal('https://youtu.be/NbL7WE9-13Q', 'GIT', 'Uso de repositorios')">
+                <img src="img/p4.PNG" alt="">
+                <p class="titulo-proyecto">Sensor de Movimiento</p>
+                </div>
+                <div class="proyecto" onclick="mostrarModal('https://www.youtube.com/embed/L_jWHffIx5E', 'Diseño Responsivo', 'Adaptable a todos los dispositivos')">
+                <img src="img/p5.jpg" alt="">
+                <p class="titulo-proyecto">Diseño Responsivo</p>
+                </div>
+                <div class="proyecto" onclick="mostrarModal('https://www.youtube.com/embed/Eo-KmOd3i7s', 'Testing', 'Pruebas estáticas y dinámicas')">
+                <img src="img/p6.png" alt="">
+                <p class="titulo-proyecto">Testing</p>
+                </div>
+            </div>
+            </div>
+        
+            <!-- Modal -->
+            <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <div class="modal-body">
+                <iframe id="video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                <div class="info">
+                    <h3 id="modal-titulo"></h3>
+                    <p id="modal-descripcion"></p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mexico, Aguascaliente, Ags, Mirdador de las culturas
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 449-192-75-58
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email:  jorgebryantprogamador@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            
+            <a href="https://www.linkedin.com/in/jorge-sustaita-304b26287/"><i class="fa-brands fa-linkedin-in"></i></a>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function mostrarModal(videoUrl, titulo, descripcion) {
+          document.getElementById('video').src = videoUrl;
+          document.getElementById('modal-titulo').innerText = titulo;
+          document.getElementById('modal-descripcion').innerText = descripcion;
+          document.getElementById('modal').style.display = 'block';
+        }
+      
+        function cerrarModal() {
+          document.getElementById('modal').style.display = 'none';
+          document.getElementById('video').src = ''; // Detiene el video
+        }
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.getElementById("descargarCV").addEventListener("click", function () {
+            const enlace = document.createElement('a');
+            enlace.href = 'cv/JorgeSustaita-IngenieroSoftwareCV.pdf'; // Asegúrate que esta ruta es correcta
+            enlace.setAttribute('download', 'CV-JorgeSustaita-DesarrolladorSoftware.pdf');
+            enlace.style.display = 'none';
+            document.body.appendChild(enlace);
+            enlace.click();
+            document.body.removeChild(enlace);
+          });
+        });
+      </script>
+      
+</body>
+</html>
